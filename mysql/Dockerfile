@@ -18,4 +18,4 @@ COPY ./populate_data.sql /docker-entrypoint-initdb.d/
 COPY ./my.cnf /etc/mysql/conf.d/
 
 # Grant necessary privileges to user
-RUN echo "GRANT ALL PRIVILEGES ON csc468.* TO 'Shveta'@'%' WITH GRANT OPTION;" > /docker-entrypoint-initdb.d/grant_permissions.sql
+RUN echo "GRANT ALL PRIVILEGES ON csc468.* TO 'Claire'@'%' WITH GRANT OPTION;" > /docker-entrypoint-initdb.d/grant_permissions.sql
